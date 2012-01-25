@@ -234,6 +234,7 @@ class ConnectionDescriptor: public EventableDescriptor
 		SslBox_t *SslBox;
 		std::string CertChainFilename;
 		std::string PrivateKeyFilename;
+		std::string CipherList;
 		bool bHandshakeSignaled;
 		bool bSslVerifyPeer;
 		bool bSslPeerAccepted;
