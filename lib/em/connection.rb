@@ -406,7 +406,7 @@ module EventMachine
         "Could not find #{file} for start_tls" unless File.exists? file
       end
 
-      EventMachine::set_tls_parms(@signature, priv_key || '', cert_chain || '', verify_peer, cipher_list)
+      EventMachine::set_tls_parms(@signature, priv_key || '', cert_chain || '', verify_peer, cipher_list || '')
       EventMachine::start_tls @signature
     end
 
